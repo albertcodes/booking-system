@@ -1,6 +1,7 @@
-.nav-link {
+  .nav-link {
     display: block;
     padding: 0.5rem 1rem;
+    color:white;
   }
   
   .nav-link:hover, .nav-link:focus {
@@ -11,5 +12,15 @@
     color: #6c757d;
     pointer-events: none;
     cursor: default;
+  }
+
+  .navbar-brand {
+    color:white;
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  #white-link {
+    color: white;
   }
   
