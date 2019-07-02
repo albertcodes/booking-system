@@ -1,4 +1,5 @@
-# Hotel Bookify <img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
+# Hotel Bookify 
+<img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
