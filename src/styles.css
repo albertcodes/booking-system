@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('./img/background1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 1600px 900px, cover;
+}
