@@ -1,4 +1,4 @@
-![](img/hotel.gif)
+![](src/img/hotel.gif)
 
 # Hotel Bookify   <img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
 
