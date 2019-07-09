@@ -1,25 +1,28 @@
-  .nav-link {
+.nav-link {
     display: block;
     padding: 0.5rem 1rem;
     color: white;
-  } 
-  .nav-link:hover, .nav-link:focus {
+} 
+.nav-link:hover, .nav-link:focus {
     text-decoration: none;
-  }
-  .nav-link.disabled {
+}
+.nav-link.disabled {
     color: #6c757d;
     pointer-events: none;
     cursor: default;
-  }
-  .navbar-brand {
+}
+.navbar-brand {
     color:white;
     font-weight: 800;
     font-size: 30px;
-  }
-  #white-link {
+}
+#white-link {
     color: white;
-  }
-  #logo {
+}
+.orange {
+    color: orange;
+}
+#logo {
   margin-left: -177px;
 }
 .lds-ripple {
@@ -54,4 +57,39 @@
     opacity: 0;
   }
 }
-  
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.searchTerm {
+  width: 100%;
+  border: 3px solid orange;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+.searchTerm:focus{
+  color: orange;
+}
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid orange;
+  background: orange;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
