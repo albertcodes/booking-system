@@ -1,8 +1,6 @@
-# ![](src/img/logo.png)
-# ![](src/img/booking.gif) ![](src/img/booking.gif)
-# <img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
+### ArchitectUI - Angular 7 Bootstrap 4
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
 
 ## Development server
 
