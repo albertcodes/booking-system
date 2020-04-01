@@ -55,52 +55,58 @@ import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
 const routes: Routes = [
   {
     path: '',
-    component: BaseLayoutComponent,
-    children: [
-
-      // Dashboads
-
-      {path: '', component: AnalyticsComponent, data: {extraParameter: 'dashboardsMenu'}},
-
-      // Elements
-
-      {path: 'elements/buttons-standard', component: StandardComponent, data: {extraParameter: 'elementsMenu'}},
-      {path: 'elements/dropdowns', component: DropdownsComponent, data: {extraParameter: 'elementsMenu'}},
-      {path: 'elements/icons', component: IconsComponent, data: {extraParameter: 'elementsMenu'}},
-      {path: 'elements/cards', component: CardsComponent, data: {extraParameter: 'elementsMenu'}},
-      {path: 'elements/list-group', component: ListGroupsComponent, data: {extraParameter: 'elementsMenu'}},
-      {path: 'elements/timeline', component: TimelineComponent, data: {extraParameter: 'elementsMenu'}},
-
-      // Components
-
-      {path: 'components/tabs', component: TabsComponent, data: {extraParameter: 'componentsMenu'}},
-      {path: 'components/accordions', component: AccordionsComponent, data: {extraParameter: 'componentsMenu'}},
-      {path: 'components/modals', component: ModalsComponent, data: {extraParameter: 'componentsMenu'}},
-      {path: 'components/progress-bar', component: ProgressBarComponent, data: {extraParameter: 'componentsMenu'}},
-      {path: 'components/tooltips-popovers', component: TooltipsPopoversComponent, data: {extraParameter: 'componentsMenu'}},
-      {path: 'components/carousel', component: CarouselComponent, data: {extraParameter: 'componentsMenu'}},
-      {path: 'components/pagination', component: PaginationComponent, data: {extraParameter: 'componentsMenu'}},
-
-      // Tables
-
-      {path: 'tables/bootstrap', component: TablesMainComponent, data: {extraParameter: 'tablesMenu'}},
-
-      // Widgets
-
-      {path: 'widgets/chart-boxes-3', component: ChartBoxes3Component, data: {extraParameter: 'pagesMenu3'}},
-
-      // Forms Elements
-
-      {path: 'forms/controls', component: ControlsComponent, data: {extraParameter: 'formElementsMenu'}},
-      {path: 'forms/layouts', component: LayoutComponent, data: {extraParameter: 'formElementsMenu'}},
-
-      // Charts
-
-      {path: 'charts/chartjs', component: ChartjsComponent, data: {extraParameter: ''}},
-
-    ]
-
+    pathMatch: 'full',
+    redirectTo: '/login'
   },
+  // {
+  //   path: '',
+  //   component: BaseLayoutComponent,
+  //   children: [
+
+  //     // Dashboads
+
+  //     {path: '', component: AnalyticsComponent, data: {extraParameter: 'dashboardsMenu'}},
+
+
+  //     // Elements
+
+  //     {path: 'elements/buttons-standard', component: StandardComponent, data: {extraParameter: 'elementsMenu'}},
+  //     {path: 'elements/dropdowns', component: DropdownsComponent, data: {extraParameter: 'elementsMenu'}},
+  //     {path: 'elements/icons', component: IconsComponent, data: {extraParameter: 'elementsMenu'}},
+  //     {path: 'elements/cards', component: CardsComponent, data: {extraParameter: 'elementsMenu'}},
+  //     {path: 'elements/list-group', component: ListGroupsComponent, data: {extraParameter: 'elementsMenu'}},
+  //     {path: 'elements/timeline', component: TimelineComponent, data: {extraParameter: 'elementsMenu'}},
+
+  //     // Components
+
+  //     {path: 'components/tabs', component: TabsComponent, data: {extraParameter: 'componentsMenu'}},
+  //     {path: 'components/accordions', component: AccordionsComponent, data: {extraParameter: 'componentsMenu'}},
+  //     {path: 'components/modals', component: ModalsComponent, data: {extraParameter: 'componentsMenu'}},
+  //     {path: 'components/progress-bar', component: ProgressBarComponent, data: {extraParameter: 'componentsMenu'}},
+  //     {path: 'components/tooltips-popovers', component: TooltipsPopoversComponent, data: {extraParameter: 'componentsMenu'}},
+  //     {path: 'components/carousel', component: CarouselComponent, data: {extraParameter: 'componentsMenu'}},
+  //     {path: 'components/pagination', component: PaginationComponent, data: {extraParameter: 'componentsMenu'}},
+
+  //     // Tables
+
+  //     {path: 'tables/bootstrap', component: TablesMainComponent, data: {extraParameter: 'tablesMenu'}},
+
+  //     // Widgets
+
+  //     {path: 'widgets/chart-boxes-3', component: ChartBoxes3Component, data: {extraParameter: 'pagesMenu3'}},
+
+  //     // Forms Elements
+
+  //     {path: 'forms/controls', component: ControlsComponent, data: {extraParameter: 'formElementsMenu'}},
+  //     {path: 'forms/layouts', component: LayoutComponent, data: {extraParameter: 'formElementsMenu'}},
+
+  //     // Charts
+
+  //     {path: 'charts/chartjs', component: ChartjsComponent, data: {extraParameter: ''}},
+
+  //   ]
+
+  // },
   {
     path: '',
     component: PagesLayoutComponent,
@@ -108,9 +114,9 @@ const routes: Routes = [
 
       // User Pages
 
-      {path: 'pages/login-boxed', component: LoginBoxedComponent, data: {extraParameter: ''}},
-      {path: 'pages/register-boxed', component: RegisterBoxedComponent, data: {extraParameter: ''}},
-      {path: 'pages/forgot-password-boxed', component: ForgotPasswordBoxedComponent, data: {extraParameter: ''}},
+      {path: 'login', component: LoginBoxedComponent, data: {extraParameter: ''}},
+      {path: 'register', component: RegisterBoxedComponent, data: {extraParameter: ''}},
+      {path: 'reset', component: ForgotPasswordBoxedComponent, data: {extraParameter: ''}},
     ]
   },
   {path: '**', redirectTo: ''}
